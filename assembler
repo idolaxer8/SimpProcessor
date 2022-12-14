@@ -1,0 +1,29 @@
+//ASSEMBLER
+
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <math.h>
+#include <ctype.h>
+#define MAX_LABEL 50 
+#define MAX_LINE 500
+#define CMD_MEM_SIZE 4096
+
+
+typedef struct 
+{
+    int label_addr;
+    char label_name[MAX_LABEL]
+}label;
+
+typedef struct
+{
+    char opcode[8];
+    char rs[4];
+    char rt[4];
+    char rd[4];
+    char imm[20];
+}command;
+
+
